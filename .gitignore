@@ -1,0 +1,62 @@
+# Supabase & Cloudflare Tunnel .gitignore
+
+# 환경 설정 및 시크릿 파일
+.env
+*.env
+*.env.local
+.env.*
+!.env.example
+
+# Cloudflare Tunnel 인증 파일
+cloudflared/*.json
+cloudflared/cert.pem
+cloudflared/*.pem
+cloudflared/.pem
+
+# 데이터베이스 볼륨
+volumes/db/
+volumes/api/
+volumes/pooler/
+volumes/storage/
+volumes/logs/
+volumes/functions/
+
+# 임시 파일
+*.log
+*.tmp
+*.temp
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 백업 파일
+*.bak
+*~
+*.backup
+
+# 로컬 개발 캐시
+.cache/
+.node_modules/
+node_modules/
+
+# 로컬 빌드
+dist/
+build/
+.next/
+out/
+
+# 기타 설정 파일
+.DS_Store
+Thumbs.db
+
+# 추가 보안 파일
+**/credentials*
+**/*.key
+**/*.pem
+**/*.crt
+**/*.cer
+**/*secret*
+**/*password*
+**/*token* 
