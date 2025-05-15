@@ -7,7 +7,7 @@
 .env.*
 !.env.example
 
-# Cloudflare Tunnel 인증 파일
+# Cloudflare Tunnel configuration directory
 cloudflared/
 
 # 데이터베이스 볼륨
