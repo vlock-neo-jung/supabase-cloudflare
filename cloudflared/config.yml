@@ -1,8 +1,0 @@
-tunnel: supabase-tunnel
-credentials-file: /etc/cloudflared/2a216d05-a8df-4ffc-9461-ee26ce39ee70.json
-origincert: /etc/cloudflared/cert.pem
-
-ingress:
-  - hostname: supabase.neocompany.dev
-    service: http://kong:8000
-  - service: http_status:404

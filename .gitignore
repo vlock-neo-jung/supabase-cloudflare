@@ -8,10 +8,7 @@
 !.env.example
 
 # Cloudflare Tunnel 인증 파일
-cloudflared/*.json
-cloudflared/cert.pem
-cloudflared/*.pem
-cloudflared/.pem
+cloudflared/
 
 # 데이터베이스 볼륨
 volumes/db/
